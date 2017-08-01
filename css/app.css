@@ -1,0 +1,214 @@
+/*pricing table*/
+.pricing-table {
+  background-color: #fefefe;
+  border: solid 1px #cacaca;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.pricing-table li,
+.pricing-table li.description {
+  font-size: 20px;
+  border-bottom: dotted 1px #cacaca;
+  padding: 0.875rem 1.125rem;
+}
+
+.pricing-table li.price,
+.pricing-table li.title {
+  font-size: 30px;
+}
+
+.pricing-table li:last-child {
+  border-bottom: 0;
+}
+
+.pricing-table .title {
+  background-color: #0a0a0a;
+  color: #fefefe;
+  border-bottom: 0;
+}
+
+.pricing-table .price {
+  background-color: #e6e6e6;
+  font-size: 2rem;
+  border-bottom: 0;
+}
+
+.pricing-table .description {
+  color: #8a8a8a;
+  font-size: 80%;
+}
+
+.pricing-table :last-child {
+  margin-bottom: 0;
+}
+
+/*/pricing table*/
+
+body {
+  background: black;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Cabin', sans-serif;
+}
+
+#social-container {
+  background-color: #303030;
+}
+
+#social-container a {
+  background-color: #303030;
+  color: #48c97c;
+}
+
+#logo-container .callout {
+  background-color: #1ec3ff;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#menu-container {
+  background-color: #303030;
+  color: white;
+}
+
+#menu-container li a {
+  text-transform: uppercase;
+}
+
+a {
+  color: white;
+}
+
+#submenu-container li a {
+  background-color: #303030;
+  color: white;
+}
+
+#submenu-container li a:hover {
+  color: gray;
+}
+
+#submenu-container {
+  border: 0;
+}
+
+#tickets-action .callout {
+  color: white;
+  background-color: #ff3a3a;
+  margin-bottom: 0;
+}
+
+#tickets-action .callout button {
+  color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+}
+
+#Lineup-container {
+  padding-bottom: 1em 0;
+}
+
+#Lineup-container,
+#Lineup-container .tabs-panel,
+#Lineup-container .tabs,
+#Lineup-container .tabs .tabs-title,
+#Lineup-container .tabs .tabs-title.is-active a {
+  background-color: #1ec3ff;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  font-family: 'Cabin', sans-serif;
+}
+
+.tabs-content {
+  border: 0;
+  font-family: 'Cabin', sans-serif;
+}
+
+#Lineup-container .tabs .tabs-title a {
+  font-size: 18px;
+  color: #a7fffd;
+  font-family: 'Cabin', sans-serif;
+}
+
+#Lineup-container .tabs .tabs-title a:hover {
+  color: gray;
+  background-color: #1ec3ff;
+}
+
+.tabs-title {
+  display: inline-block;
+  float: none;
+}
+
+#Lineup-container .orbit-container {
+  margin-bottom: 1em;
+}
+
+#Lineup-container .column:nth-child(odd) .orbit-caption {
+  text-align: right;
+}
+
+#tickets-container {
+  padding: 1em 0;
+  background-color: #ffd747;
+}
+
+#info-container {
+  background-color: #ff3a3a;
+  color: white;
+  padding: 1em 0;
+}
+
+#info-container .info-map iframe {
+  width: 100%;
+}
+
+#suscribete-container {
+  background-color: #1ec3ff;
+  color: white;
+  padding: 1em 0;
+}
+
+#suscribete-container h4 small {
+  color: #f0f0f0;
+}
+
+#suscribete-container input[type="submit"] {
+  font-family: 'Cabin', sans-serif;
+}
+
+i.fi-mail {
+  font-size: 25px;
+}
+
+#suscribete-container .none {
+  display: none;
+ 	text-align: center;
+ 	color: white;
+ 	font-size: 1em;
+}
+
+.data-sticky {
+  z-index: 100;
+  width: 100%;
+}
+
+#offCanvas,
+#offCanvas li a {
+  background-color: black;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+}
+
+/*#offCanvas .is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent white;
+}
+
+#offCanvas .js-drilldown-back > a::before {
+  border-color: transparent white transparent transparent;
+}*/
