@@ -1,45 +1,30 @@
 /*pricing table*/
 .pricing-table {
-  background-color: #fefefe;
-  border: solid 1px #cacaca;
   width: 100%;
-  text-align: center;
-  list-style-type: none;
+  text-align: left;
   margin: 0;
   margin-bottom: 1em;
 }
 
-.pricing-table li,
-.pricing-table li.description {
+.pricing-table li {
   font-size: 20px;
-  border-bottom: dotted 1px #cacaca;
   padding: 0.875rem 1.125rem;
 }
 
-.pricing-table li.price,
+
 .pricing-table li.title {
   font-size: 30px;
 }
 
-.pricing-table li:last-child {
-  border-bottom: 0;
-}
-
 .pricing-table .title {
-  background-color: #0a0a0a;
-  color: #fefefe;
   border-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.pricing-table .price {
-  background-color: #e6e6e6;
-  font-size: 2rem;
-  border-bottom: 0;
-}
 
-.pricing-table .description {
+.pricing-table li.description {
   color: #8a8a8a;
-  font-size: 80%;
+  font-size: 16px;
 }
 
 .pricing-table :last-child {
@@ -49,35 +34,94 @@
 /*/pricing table*/
 
 body {
-  background: black;
+  background: #eee;
 }
 
-h1, h2, h3, h4, h5, h6, button {
+h2, h3, h5, h6, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h1 {
   font-family: 'Cabin', sans-serif;
 }
 
 #social-container {
-  background-color: #303030;
+  background-color: #333;
+  padding: 3em;
+  color: white;
 }
 
 #social-container a {
-  background-color: #303030;
-  color: #48c97c;
+  color: #037a9b;
+  font-size: 22px;
 }
 
-#logo-container .callout {
-  background-color: #1ec3ff;
-  color: #fff;
+#logo-container {
   margin-bottom: 0;
+  background-color: #eee;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #menu-container {
-  background-color: #303030;
+  background-color: #037a9b;
   color: white;
+}
+
+.fi-list {
+  font-size: 1.6em;
 }
 
 #menu-container li a {
   text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  line-height: 45px;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#menu-container li a:hover {
+  color: #388beb;
+}
+
+#menu-container li a:active {
+  color: #388beb;
+}
+
+#menu-container li a:focus {
+  color: #388beb;
+}
+
+.is-dropdown-submenu {
+  border: none;
+  background: #127d99;
+  color: white;
+}
+
+.logo {
+  text-indent: -9999px;
+  max-width: none;
+  width: auto;
+  margin-bottom: 0px;
+  display: block;
+  line-height: 22px;
+  font-size: 22px;
+  letter-spacing: -1.5px;
+  height: 45px;
+}
+
+.logo-mini {
+  height: 45px;
 }
 
 a {
@@ -85,7 +129,7 @@ a {
 }
 
 #submenu-container li a {
-  background-color: #303030;
+  background-color: #037a9b;
   color: white;
 }
 
@@ -97,19 +141,73 @@ a {
   border: 0;
 }
 
-#tickets-action .callout {
+.headline {
   color: white;
-  background-color: #ff3a3a;
-  margin-bottom: 0;
+  position: absolute;
+  text-align: center;
+  line-height: 75vh;
+  width: 100%;
+  z-index: 2;
+  opacity: 1;
+  font-size: 3em;
 }
 
-#tickets-action .callout button {
-  color: #e5e5e5;
-  border: 1px solid #e5e5e5;
+.sub-headline {
+  color: white;
+  position: absolute;
+  text-align: center;
+  line-height: 90vh;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+}
+
+@media screen and (max-width: 640px) {
+  .headline {
+    line-height: 50vh;
+    width: 100%;
+    z-index: 2;
+    opacity: 1;
+    font-size: 2em;
+  }
+
+  .sub-headline {
+    line-height: 70vh;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headline {
+    line-height: 30vh;
+    width: 100%;
+    z-index: 2;
+    opacity: 1;
+    font-size: 2em;
+  }
+
+  .sub-headline {
+    line-height: 40vh;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    font-size: 1em;
+  }
+}
+
+.orbit-image {
+  filter: brightness(80%);
 }
 
 #Lineup-container {
-  padding-bottom: 1em 0;
+  padding: 6em 0;
 }
 
 #Lineup-container,
@@ -117,22 +215,22 @@ a {
 #Lineup-container .tabs,
 #Lineup-container .tabs .tabs-title,
 #Lineup-container .tabs .tabs-title.is-active a {
-  background-color: #1ec3ff;
-  color: white;
+  background-color: #eee;
+  color: #333;
   border: 0;
   text-transform: uppercase;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .tabs-content {
   border: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #Lineup-container .tabs .tabs-title a {
   font-size: 18px;
-  color: #a7fffd;
-  font-family: 'Cabin', sans-serif;
+  color: #25a2d0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #Lineup-container .tabs .tabs-title a:hover {
@@ -148,19 +246,30 @@ a {
 #Lineup-container .orbit-container {
   margin-bottom: 1em;
 }
-
+/*
 #Lineup-container .column:nth-child(odd) .orbit-caption {
   text-align: right;
-}
+}*/
 
 #tickets-container {
-  padding: 1em 0;
-  background-color: #ffd747;
+  padding: 6em 0;
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+#tickets-container p {
+  font-family: 'Cabin', sans-serif;
+  padding: 1em;
+  text-align: justify;
+}
+
+#partners-container h3 {
+  padding-top: 2em;
 }
 
 #info-container {
-  background-color: #ff3a3a;
-  color: white;
+  background-color: #eee;
+  color:#333;
   padding: 1em 0;
 }
 
@@ -169,7 +278,7 @@ a {
 }
 
 #suscribete-container {
-  background-color: #1ec3ff;
+  background-color: #333;
   color: white;
   padding: 1em 0;
 }

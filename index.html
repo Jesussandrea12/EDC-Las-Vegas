@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/e5/20/2e/e5202ebb0760e241d1a83382066423d4.png" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat:700" rel="stylesheet">
     <title>EDC Las Vegas</title>
     <link rel="stylesheet" href="icons/foundation-icons.css">
     <link rel="stylesheet" href="css/foundation-flex.css">
@@ -33,45 +34,17 @@
         </div>
 
         <div class="off-canvas-content" data-off-canvas-content>
-            <!-- social -->
-
-            <section id="social-container">
-              <div class="row align-center">
-                <div class="small-1 column">
-                  <a href="#" target="_blank">
-                    <i class="fi-social-facebook"></i>
-                  </a>
-                </div>
-                <div class="small-1 column">
-                  <a href="#" target="_blank">
-                    <i class="fi-social-instagram"></i>
-                  </a>
-                </div>
-                <div class="small-1 column">
-                  <a href="#" target="_blank">
-                    <i class="fi-social-twitter"></i>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <!-- /social -->
-
-            <!-- logo -->
-            <section id="logo-container">
-              <div class="callout text-center">
-                <h1><strong>EDC</strong> Las Vegas</h1>
-              </div>
-            </section>
-            <!-- /logo -->
 
             <!-- menu -->
             <section id="scrollSticky" data-sticky-container>
               <div class="data-sticky" data-top-anchor="scrollSticky" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small">
                 <nav id="menu-container" data-magellan>
-                  <ul class="menu align-spaced show-for-small-only">
-                    <li><a href="#" data-toggle="offCanvas">Menu</a></li>
+                  <ul class="menu show-for-small-only align-left">
+                    <li><a href="#" data-toggle="offCanvas"><i class="fi-list"></i></a></li>
+                    <li><a href="#"><img class="logo-mini align-center" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2017/04/updated_edc_logo1.png" alt="logo"></a></li>
                   </ul>
                   <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
+                    <li><a href="#"><img class="logo" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2017/04/updated_edc_logo1.png" alt="logo"></a></li>
                     <li><a href="#tickets-container">Tickets</a></li>
                     <li>
                       <a href="#lineup-container">Lineup</a>
@@ -89,21 +62,45 @@
             </section>
             <!-- /menu -->
 
-            <!-- tickets -->
-            <section id="tickets-action">
-              <div class="callout large text-center">
-                <a href="#tickets-container">
-                  <button data-magellan type="button" class="button hollow large" name="button">Comprar boletos</button>
-
-                </a>
+            <!-- logo -->
+            <section id="logo-container">
+              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+                <div class="orbit-wrapper">
+                  <ul class="orbit-container">
+                    <div class="contenedor">
+                      <h1 class="text-center headline">EDC Las Vegas</h1>
+                      <span class="text-center sub-headline">Thank you, Headliners</span>
+                    </div>
+                    <li class="is-active orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0619_212933-2550_CCW1.jpg" alt="Space">
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0617_220928-4328_JSL.jpg" alt="Space">
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0620_011907-4222_CCW.jpg" alt="Space">
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0620_015204-4887_JSL1.jpg" alt="Space">
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </section>
-            <!-- /tickets -->
+            <!-- /logo -->
 
             <!-- linup -->
             <section id="Lineup-container" data-magellan-target="Lineup-container">
-              <h1 class="text-center">Lineup</h1>
-              <ul class="tabs text-center" data-tabs id="lineup-tabs">
+              <h2 class="text-center">Lineup</h2>
+              <ul class="tabs text-center show-for-medium" data-tabs id="lineup-tabs">
                 <li class="tabs-title is-active">
                   <a href="#panelViernes">Viernes</a>
                 </li>
@@ -114,79 +111,20 @@
                   <a href="#panelDomingo">Domingo</a>
                 </li>
               </ul>
+
               <div class="tabs-content" data-tabs-content="lineup-tabs">
                 <div class="tabs-panel is-active"  id="panelViernes">
                   <div class="row">
-                    <div class="small-12 medium-6 column">
+                    <div class="small-12 medium-12 column">
 
                       <div class="orbit" data-orbit>
                       <div class="orbit-container">
                         <div class="orbit-slide">
-                          <img class="orbit-image" src="http://www.youredm.com/wp-content/uploads/2016/07/don-diablo-at-edc-2016_via-twitter.png" alt="Don Diablo">
-                          <figcaption class="orbit-caption">Don Diablo</figcaption>
+                          <img class="orbit-image" src="images/friday.png" alt="Viernes">
+                          <figcaption class="orbit-caption">Viernes</figcaption>
                         </div>
                       </div>
                     </div>
-
-                  </div>
-                  <div class="small-12 medium-6 column">
-
-                    <div class="orbit" data-orbit>
-                    <div class="orbit-container">
-                      <div class="orbit-slide">
-                        <img class="orbit-image" src="http://www.youredm.com/wp-content/uploads/2016/07/don-diablo-at-edc-2016_via-twitter.png" alt="Don Diablo">
-                        <figcaption class="orbit-caption">Don Diablo</figcaption>
-                      </div>
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="small-12 medium-6 column">
-
-                    <div class="orbit" data-orbit>
-                    <div class="orbit-container">
-                      <div class="orbit-slide">
-                        <img class="orbit-image" src="http://www.youredm.com/wp-content/uploads/2016/07/don-diablo-at-edc-2016_via-twitter.png" alt="Don Diablo">
-                        <figcaption class="orbit-caption">Don Diablo</figcaption>
-                      </div>
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="small-12 medium-6 column">
-
-                    <div class="orbit" data-orbit>
-                    <div class="orbit-container">
-                      <div class="orbit-slide">
-                        <img class="orbit-image" src="http://www.youredm.com/wp-content/uploads/2016/07/don-diablo-at-edc-2016_via-twitter.png" alt="Don Diablo">
-                        <figcaption class="orbit-caption">Don Diablo</figcaption>
-                      </div>
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="small-12 medium-6 column">
-
-                    <div class="orbit" data-orbit>
-                    <div class="orbit-container">
-                      <div class="orbit-slide">
-                        <img class="orbit-image" src="http://www.youredm.com/wp-content/uploads/2016/07/don-diablo-at-edc-2016_via-twitter.png" alt="Don Diablo">
-                        <figcaption class="orbit-caption">Don Diablo</figcaption>
-                      </div>
-                    </div>
-                  </div>
-
-                  </div>
-                  <div class="small-12 medium-6 column">
-
-                    <div class="orbit" data-orbit>
-                    <div class="orbit-container">
-                      <div class="orbit-slide">
-                        <img class="orbit-image" src="http://www.youredm.com/wp-content/uploads/2016/07/don-diablo-at-edc-2016_via-twitter.png" alt="Don Diablo">
-                        <figcaption class="orbit-caption">Don Diablo</figcaption>
-                      </div>
-                    </div>
-                  </div>
 
                   </div>
                 </div>
@@ -194,154 +132,35 @@
 
                 <div class="tabs-panel is-active" id="panelSabado">
                   <div class="row">
-                    <div class="small-12 medium-6 column">
+                    <div class="small-12 medium-12 column">
 
                       <div class="orbit" data-orbit>
                       <div class="orbit-container">
                         <div class="orbit-slide">
-                          <img class="orbit-image" src="https://i.ytimg.com/vi/UT1Vd53s_fE/maxresdefault.jpg" alt="Alesso">
-                          <figcaption class="orbit-caption">Alesso</figcaption>
+                          <img class="orbit-image" src="images/saturday.png" alt="Sabado">
+                          <figcaption class="orbit-caption">Sábado</figcaption>
                         </div>
                       </div>
                     </div>
 
                     </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://i.ytimg.com/vi/UT1Vd53s_fE/maxresdefault.jpg" alt="Alesso">
-                          <figcaption class="orbit-caption">Alesso</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://i.ytimg.com/vi/UT1Vd53s_fE/maxresdefault.jpg" alt="Alesso">
-                          <figcaption class="orbit-caption">Alesso</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://i.ytimg.com/vi/UT1Vd53s_fE/maxresdefault.jpg" alt="Alesso">
-                          <figcaption class="orbit-caption">Alesso</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://i.ytimg.com/vi/UT1Vd53s_fE/maxresdefault.jpg" alt="Alesso">
-                          <figcaption class="orbit-caption">Alesso</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://i.ytimg.com/vi/UT1Vd53s_fE/maxresdefault.jpg" alt="Alesso">
-                          <figcaption class="orbit-caption">Alesso</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-
                   </div>
                 </div>
                 <div class="tabs-panel is-active" id="panelDomingo">
                   <div class="row">
-                    <div class="small-12 medium-6 column">
+                    <div class="small-12 medium-12 column">
 
                       <div class="orbit" data-orbit>
                       <div class="orbit-container">
                         <div class="orbit-slide">
-                          <img class="orbit-image" src="https://www.victordelatorre.es/blog/wp-content/uploads/2016/03/major-lazer-channel-v-island-party-photo-by-oliver-minnett-5.jpg" alt="Major Lazer">
-                          <figcaption class="orbit-caption">Major Lazer</figcaption>
+                          <img class="orbit-image" src="images/sunday.png" alt="Domingo">
+                          <figcaption class="orbit-caption">Domingo</figcaption>
                         </div>
                       </div>
                     </div>
 
                     </div>
-                    <div class="small-12 medium-6 column">
 
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://www.victordelatorre.es/blog/wp-content/uploads/2016/03/major-lazer-channel-v-island-party-photo-by-oliver-minnett-5.jpg" alt="Major Lazer">
-                          <figcaption class="orbit-caption">Major Lazer</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://www.victordelatorre.es/blog/wp-content/uploads/2016/03/major-lazer-channel-v-island-party-photo-by-oliver-minnett-5.jpg" alt="Major Lazer">
-                          <figcaption class="orbit-caption">Major Lazer</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://www.victordelatorre.es/blog/wp-content/uploads/2016/03/major-lazer-channel-v-island-party-photo-by-oliver-minnett-5.jpg" alt="Major Lazer">
-                          <figcaption class="orbit-caption">Major Lazer</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://www.victordelatorre.es/blog/wp-content/uploads/2016/03/major-lazer-channel-v-island-party-photo-by-oliver-minnett-5.jpg" alt="Major Lazer">
-                          <figcaption class="orbit-caption">Major Lazer</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-                    <div class="small-12 medium-6 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="https://www.victordelatorre.es/blog/wp-content/uploads/2016/03/major-lazer-channel-v-island-party-photo-by-oliver-minnett-5.jpg" alt="Major Lazer">
-                          <figcaption class="orbit-caption">Major Lazer</figcaption>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -350,51 +169,81 @@
 
             <!-- compra de boletos -->
             <section id="tickets-container" data-magellan-target="tickets-container">
-              <h3 class="text-center">Comprar boletos</h3>
+              <h2 class="text-center">TICKETS</h2>
+              <div class="column medium-12">
+                <p class="text-center">A ticket grants you entry through the gates of EDC, where you are free to wander and explore this colorful world of fantastically costumed performers, mesmerizing art and visual effects, and multiple stages of world-class music and cutting-edge production.</p>
+                <p class="text-center">A handling fee of $10 is added to every ticket order. $1 from every ticket will be donated to support nonprofit charitable organizations. Beware of scalpers and scammers! See our Ticketing FAQ for answers to your ticketing questions. You must be 18+ to enter the festival.</p>
+                <p class="text-center">Explore, Engage, Energize and Enjoy! A spectacular adventure awaits you with the EDC Las Vegas VIP Experience.</p>
+              </div>
               <div class="row" data-equalizer data-equalize-on="small">
-                <div class="column small-10 medium-6 medium-offset-3 small-offset-1">
-                  <ul class="pricing-table no-bullet">
-                    <li class="title">Platino</li>
-                    <li class="price">$120</li>
-                    <li class="description">Acceso Viernes, Sábado y Domingo</li>
-                    <li>Acesso a todos los escenarios</li>
-                    <li>Puedes llevar a una persona extra</li>
-                    <li>Participa de un sorteo para acceder al backstage</li>
-                    <li><a class="button" href="#">Comprar Platino</a></li>
+                <div class="column small-12 medium-6" data-equalizer-watch="foo">
+                  <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
+                    <li class="title">Explore</li>
+                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EXPLORE-Option-1.jpg" alt="explore">
+                    <li class="description">Dedicated VIP dance areas and lounge at neonGARDEN</li>
+                    <li class="description" data-equalizer-watch="bar">Dedicated VIP viewing decks at kineticFIELD, cosmicMEADOW and circuitGROUNDS</li>
+                    <li class="description" data-equalizer-watch="bar">Blind Owl Bistro and Burlesque show</li>
+                    <li class="description" data-equalizer-watch="bar">VIP Ferris wheel</li>
                   </ul>
                 </div>
-                <div class="column small-6 medium-4 medium-offset-2" data-equalizer-watch="foo">
+                <div class="column small-12 medium-6" data-equalizer-watch="foo">
                   <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
-                    <li class="title">Gold</li>
-                    <li class="price">$99,99</li>
-                    <li class="description">Acceso Viernes, Sábado y Domingo</li>
-                    <li data-equalizer-watch="bar">Acesso limitado a los escenarios</li>
-                    <li data-equalizer-watch="bar">Free Parking</li>
-                    <li data-equalizer-watch>-</li>
-                    <li><a class="button" href="#">Comprar Gold</a></li>
+                    <li class="title">Engage</li>
+                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV17-Engage.jpg" alt="engage">
+                    <li class="description">Interactive photo booths at kineticFIELD, circuitGROUNDS and neonGARDEN</li>
+                    <li class="description" data-equalizer-watch="bar">Complimentary oxygen bar</li>
+                    <li class="description" data-equalizer-watch="bar">EDC Unity Wall: share your message of love with fellow VIP Headliners</li>
+                    <li class="description" data-equalizer-watch>VIP ball pit — a Headliner favorite!</li>
                   </ul>
                 </div>
-                <div class="column small-6 medium-4">
+                <div class="column small-12 medium-6" data-equalizer-watch="foo">
                   <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
-                    <li class="title">Silver</li>
-                    <li class="price">$80</li>
-                    <li class="description">Acceso Viernes, Sábado y Domingo</li>
-                    <li data-equalizer-watch="bar">Acesso limitado a los escenarios</li>
-                    <li data-equalizer-watch="bar">-</li>
-                    <li data-equalizer-watch>-</li>
-                    <li><a class="button" href="#">Comprar Silver</a></li>
+                    <li class="title">Energize</li>
+                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV17-ENERGIZE.jpg" alt="energize">
+                    <li class="description">Water refill station at kineticFIELD</li>
+                    <li class="description" data-equalizer-watch="bar">Coffee bar</li>
+                    <li class="description" data-equalizer-watch="bar">Dedicated gourmet food trucks: offerings will include vegetarian, vegan and gluten-free options</li>
+                    <li class="description" data-equalizer-watch>Beats and Breakfast at kineticFIELD: complimentary, 4–6am, includes fruit salad, orange juice, bagels, bananas, pastries and more (first come, first served while supplies last)</li>
+                  </ul>
+                </div>
+                <div class="column small-12 medium-6">
+                  <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
+                    <li class="title">Enjoy</li>
+                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV-17-ENJOY.jpg" alt="enjoy">
+                    <li class="description">Dedicated, expedited VIP entrances into the festival</li>
+                    <li class="description" data-equalizer-watch="bar">Air-conditioned bathrooms at kineticFIELD, circuitGROUNDS and neonGARDEN</li>
+                    <li class="description" data-equalizer-watch="bar">Custom commemorative EDC VIP show lanyard</li>
+                    <li class="description" data-equalizer-watch>Full cash bars offering signature EDC cocktails</li>
                   </ul>
                 </div>
               </div>
             </section>
             <!-- /compra de boletos -->
 
-
+            <!-- partners -->
+            <section id="partners-container">
+              <h3 class="text-center">Partners</h3>
+              <div class="row align-center">
+                <div class="column medium-3 small-8">
+                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/edc_las_vegas_2017_web_sponsorship_tiles_pioneer_dj_r01.png" alt="pionneer">
+                </div>
+                <div class="column medium-3 small-8">
+                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/edc_las_vegas_2017_sponsor_logos_trap_nation_500x500_r013.png" alt="pionneer">
+                </div>
+                <div class="column medium-3 small-8">
+                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/escape_2016_web_sponsorship_smirnoff_footer_logo_r01.png" alt="pionneer">
+                </div>
+                <div class="column medium-3 small-8">
+                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/escape_2016_web_sponsorship_corona_extra_footer_logo_r01.png" alt="pionneer">
+                </div
+              </div>
+            </section>
+            <!-- /partners -->
 
             <!-- suscribete -->
             <section id="suscribete-container" data-magellan-target="suscribete-container">
               <h3 class="text-center">Suscríbete</h3>
-              <h4 class="text-center"><small>Recibe las ultimas novedades del festival</small></h4>
+              <h5 class="text-center"><small>Recibe las ultimas novedades del festival</small></h5>
               <form class="" action="https://formspree.io/jesussandrea12@gmail.com" method="POST" novalidate data-abide>
                 <div data-abide-error class="row colums small-12 small-12 medium-6 text-center none">
                   <p><i class="fi-alert"> Ingresó un correo electronico no válido</i></p>
@@ -420,6 +269,29 @@
               </div>
             </section>
             <!-- /info -->
+            <!-- social -->
+
+            <section id="social-container">
+              <p class="text-center">Warning: This is NOT the official web page</p>
+              <div class="row align-center">
+                <div class="small-1 column">
+                  <a href="#" target="_blank">
+                    <i class="fi-social-facebook"></i>
+                  </a>
+                </div>
+                <div class="small-1 column">
+                  <a href="#" target="_blank">
+                    <i class="fi-social-instagram"></i>
+                  </a>
+                </div>
+                <div class="small-1 column">
+                  <a href="#" target="_blank">
+                    <i class="fi-social-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <!-- /social -->
         </div>
 
       </div>
