@@ -3,304 +3,433 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/e5/20/2e/e5202ebb0760e241d1a83382066423d4.png" />
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat:700" rel="stylesheet">
-    <title>EDC Las Vegas</title>
-    <link rel="stylesheet" href="icons/foundation-icons.css">
-    <link rel="stylesheet" href="css/foundation-flex.css">
-    <link rel="stylesheet" href="css/app.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>EDC Las Vegas | Las Vegas Motor Speedway</title>
+    <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-
-    <div class="off-canvas-wrapper">
-      <div class="off-canvas-wrapper-inner" data-off-cnavas-wrapper>
-        <div id="offCanvas" class="off-canvas position-left" data-off-canvas>
-          <nav data-magellan>
-            <ul class="menu vertical" data-drilldown>
-              <li><a href="#tickets-container">Tickets</a></li>
-              <li>
-                <a href="#lineup-container">Lineup</a>
-                <ul id="submenu-container" class="menu vertical">
-                  <li><a data-toggle-dia="panelViernes" href="#panelViernes">Viernes</a></li>
-                  <li><a data-toggle-dia="panelSabado" href="#panelSabado">Sábado</a></li>
-                  <li><a data-toggle-dia="panelDomingo" href="#panelDomingo">Domingo</a></li>
-                </ul>
-              </li>
-              <li><a href="#info-container">Info</a></li>
-              <li><a href="#suscribete-container">Suscribete</a></li>
+    <!-- offcanvas -->
+    <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+      <!-- Menu responsive-->
+      <nav data-magellan>
+        <ul class="vertical menu offcanvas" data-drilldown>
+          <li><a href="#tickets">Tickets</a></li>
+          <li>
+            <a href="#">Experience</a>
+            <ul class="menu vertical">
+              <li><a href="#world-of-edc">World of edc</a></li>
+              <li><a href="#stages">Stages</a></li>
+              <li><a href="#">Rides</a></li>
+              <li><a href="#">Art</a></li>
             </ul>
-          </nav>
+          </li>
+          <li><a href="#">Camping</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+    <!-- nav -->
+    <section id="scrollSticky" data-sticky-container>
+      <div class="data-sticky" data-top-anchor="scrollSticky" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small">
+        <nav data-magellan>
+          <div class="menu align-center show-for-small-only">
+            <li><a href="#" data-toggle="offCanvas"><button class="menu-icon" type="button"></button></a></li>
+            <div class="row align-center">
+              <div class="column">
+                <a href="#top"><img class="menu-logo-mini" src="images/logo.png" alt="logo"></a>
+              </div>
+            </div>
+          </div>
+          <div class="menu align-center show-for-medium-only">
+            <li><a href="#" data-toggle="offCanvas"><button class="menu-icon" type="button"></button></a></li>
+            <div class="row align-center">
+              <div class="column">
+                <a href="#top"><img class="menu-logo-mini" src="images/logo.png" alt="logo"></a>
+              </div>
+            </div>
+          </div>
+          <ul class="menu align-spaced dropdown show-for-large" data-dropdown-menu data-magellan>
+            <li class="align-center"><a href="#top"><img class="menu-logo" src="images/logo.png" alt="logo"></a></li>
+            <li class="align-center"><a href="#tickets">Tickets</a></li>
+            <li class="align-center">
+              <a href="#">Experience</a>
+              <ul class="menu vertical menu-sub">
+                <li><a href="#world-of-edc">World of edc</a></li>
+                <li><a href="#stages">Stages</a></li>
+                <li><a href="#">Rides</a></li>
+                <li><a href="#">Art</a></li>
+              </ul>
+            </li>
+            <li class="align-center"><a href="#">Camping</a></li>
+            <li class="align-center"><a href="#">Travel</a></li>
+            <li class="align-center"><a href="#">Info</a></li>
+            <li class="align-center"><a href="#">Shop</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- /nav -->
+
+    <!-- hero -->
+    <section id="top" data-magellan-target="top" class="hero">
+      <div class="hero-wrapper text-center">
+        <video src="https://www.aldaevents.com/wp-content/uploads/2017/03/dancefloor_newedit.mp4.mp4" width="100%" autoplay loop poster="images/poster.jpg" type="video/mp4"></video>
+      </div>
+    </section>
+    <!-- /hero -->
+
+    <!-- info -->
+    <section class="info">
+      <div class="row align-center">
+        <div class="column">
+          <p class="text-center"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#"> LAS VEGAS MOTOR SPEEDWAY</a></p>
+          <a href="#"><i class="fa fa-facebook info-social" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter info-social" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram info-social" aria-hidden="true"></i></a>
+        </div>
+        <div class="column">
+          <button class="hollow button medium info-botoncito" href="#">WATCH TRAILER</button>
+        </div>
+      </div>
+    </section>
+    <!-- /info -->
+
+    <!-- story -->
+    <section class="story">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon text-center">
+            <i class="fa fa-play icons" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-content">
+            <p class="timeline-content-date">We are edc las vegas</h2>
+            <p>"Electric Daisy Carnival"</p>
+          </div>
         </div>
 
-        <div class="off-canvas-content" data-off-canvas-content>
+        <div class="timeline-item">
+          <div class="timeline-icon text-center">
+            <i class="fa fa-music icons" aria-hidden="true"></i>
+          </div>
+          <div class="timeline-content right">
+            <p class="timeline-content-date">Music is...</h2>
+          </div>
+        </div>
 
-            <!-- menu -->
-            <section id="scrollSticky" data-sticky-container>
-              <div class="data-sticky" data-top-anchor="scrollSticky" data-sticky id="sticky" data-options="marginTop:0;" data-sticky-on="small">
-                <nav id="menu-container" data-magellan>
-                  <ul class="menu show-for-small-only align-left">
-                    <li><a href="#" data-toggle="offCanvas"><i class="fi-list"></i></a></li>
-                    <li><a href="#"><img class="logo-mini align-center" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2017/04/updated_edc_logo1.png" alt="logo"></a></li>
-                  </ul>
-                  <ul class="menu dropdown align-spaced show-for-medium" data-dropdown-menu>
-                    <li><a href="#"><img class="logo" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2017/04/updated_edc_logo1.png" alt="logo"></a></li>
-                    <li><a href="#tickets-container">Tickets</a></li>
-                    <li>
-                      <a href="#lineup-container">Lineup</a>
-                      <ul class="vertical menu">
-                        <li><a data-toggle-dia="panelViernes" href="#panelViernes">Viernes</a></li>
-                        <li><a data-toggle-dia="panelSabado" href="#panelSabado">Sábado</a></li>
-                        <li><a data-toggle-dia="panelDomingo" href="#panelDomingo">Domingo</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#info-container">Info</a></li>
-                    <li><a href="#suscribete-container">Suscribete</a></li>
-                  </ul>
-                </nav>
-              </div>
-            </section>
-            <!-- /menu -->
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-external-link icons" aria-hidden="true"></i></div>
+          <div class="timeline-content">
+            <p class="timeline-content-date">How we tell stories</h2>
+            <p>How we escape reality</p>
+          </div>
+        </div>
 
-            <!-- logo -->
-            <section id="logo-container">
-              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-                <div class="orbit-wrapper">
-                  <ul class="orbit-container">
-                    <div class="contenedor">
-                      <h1 class="text-center headline">EDC Las Vegas</h1>
-                      <span class="text-center sub-headline">Thank you, Headliners</span>
-                    </div>
-                    <li class="is-active orbit-slide">
-                      <figure class="orbit-figure">
-                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0619_212933-2550_CCW1.jpg" alt="Space">
-                      </figure>
-                    </li>
-                    <li class="orbit-slide">
-                      <figure class="orbit-figure">
-                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0617_220928-4328_JSL.jpg" alt="Space">
-                      </figure>
-                    </li>
-                    <li class="orbit-slide">
-                      <figure class="orbit-figure">
-                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0620_011907-4222_CCW.jpg" alt="Space">
-                      </figure>
-                    </li>
-                    <li class="orbit-slide">
-                      <figure class="orbit-figure">
-                        <img class="orbit-image" src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV2016_0620_015204-4887_JSL1.jpg" alt="Space">
-                      </figure>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-            <!-- /logo -->
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-battery-full icons" aria-hidden="true"></i></div>
+          <div class="timeline-content right">
+            <p class="timeline-content-date">How we fill the world with positives vibes</h2>
+          </div>
+        </div>
 
-            <!-- linup -->
-            <section id="Lineup-container" data-magellan-target="Lineup-container">
-              <h2 class="text-center">Lineup</h2>
-              <ul class="tabs text-center show-for-medium" data-tabs id="lineup-tabs">
-                <li class="tabs-title is-active">
-                  <a href="#panelViernes">Viernes</a>
-                </li>
-                <li class="tabs-title">
-                  <a href="#panelSabado">Sábado</a>
-                </li>
-                <li class="tabs-title">
-                  <a href="#panelDomingo">Domingo</a>
-                </li>
-              </ul>
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-music icons" aria-hidden="true"></i></div>
+          <div class="timeline-content">
+            <p class="timeline-content-date">Music is...</p>
+          </div>
+        </div>
 
-              <div class="tabs-content" data-tabs-content="lineup-tabs">
-                <div class="tabs-panel is-active"  id="panelViernes">
-                  <div class="row">
-                    <div class="small-12 medium-12 column">
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-plug icons" aria-hidden="true"></i></div>
+          <div class="timeline-content right">
+            <p class="timeline-content-date">How we connect with others</p>
+          </div>
+        </div>
 
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="images/friday.png" alt="Viernes">
-                          <figcaption class="orbit-caption">Viernes</figcaption>
-                        </div>
-                      </div>
-                    </div>
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-globe icons" aria-hidden="true"></i></div>
+          <div class="timeline-content">
+            <p class="timeline-content-date">How we turn the world into one giant dance floor</p>
+          </div>
+        </div>
 
-                  </div>
-                </div>
-              </div>
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-music icons" aria-hidden="true"></i></div>
+          <div class="timeline-content right">
+            <p class="timeline-content-date">Music is...</p>
+            <p></p>
+          </div>
+        </div>
 
-                <div class="tabs-panel is-active" id="panelSabado">
-                  <div class="row">
-                    <div class="small-12 medium-12 column">
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-rocket icons" aria-hidden="true"></i></div>
+          <div class="timeline-content">
+            <p class="timeline-content-date">What feelings sound like.</h2>
+            <p>AT EDC,</p>
+          </div>
+        </div>
 
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="images/saturday.png" alt="Sabado">
-                          <figcaption class="orbit-caption">Sábado</figcaption>
-                        </div>
-                      </div>
-                    </div>
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-fast-backward icons" aria-hidden="true"></i></div>
+          <div class="timeline-content right">
+            <p class="timeline-content-date">We just don't tell stories, we create memories.</h2>
+            <p>Our story started 20 years ago in los angeles, ca.</p>
+          </div>
+        </div>
 
-                    </div>
-                  </div>
-                </div>
-                <div class="tabs-panel is-active" id="panelDomingo">
-                  <div class="row">
-                    <div class="small-12 medium-12 column">
-
-                      <div class="orbit" data-orbit>
-                      <div class="orbit-container">
-                        <div class="orbit-slide">
-                          <img class="orbit-image" src="images/sunday.png" alt="Domingo">
-                          <figcaption class="orbit-caption">Domingo</figcaption>
-                        </div>
-                      </div>
-                    </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!-- /linup -->
-
-            <!-- compra de boletos -->
-            <section id="tickets-container" data-magellan-target="tickets-container">
-              <h2 class="text-center">TICKETS</h2>
-              <div class="column medium-12">
-                <p class="text-center">A ticket grants you entry through the gates of EDC, where you are free to wander and explore this colorful world of fantastically costumed performers, mesmerizing art and visual effects, and multiple stages of world-class music and cutting-edge production.</p>
-                <p class="text-center">A handling fee of $10 is added to every ticket order. $1 from every ticket will be donated to support nonprofit charitable organizations. Beware of scalpers and scammers! See our Ticketing FAQ for answers to your ticketing questions. You must be 18+ to enter the festival.</p>
-                <p class="text-center">Explore, Engage, Energize and Enjoy! A spectacular adventure awaits you with the EDC Las Vegas VIP Experience.</p>
-              </div>
-              <div class="row" data-equalizer data-equalize-on="small">
-                <div class="column small-12 medium-6" data-equalizer-watch="foo">
-                  <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
-                    <li class="title">Explore</li>
-                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EXPLORE-Option-1.jpg" alt="explore">
-                    <li class="description">Dedicated VIP dance areas and lounge at neonGARDEN</li>
-                    <li class="description" data-equalizer-watch="bar">Dedicated VIP viewing decks at kineticFIELD, cosmicMEADOW and circuitGROUNDS</li>
-                    <li class="description" data-equalizer-watch="bar">Blind Owl Bistro and Burlesque show</li>
-                    <li class="description" data-equalizer-watch="bar">VIP Ferris wheel</li>
-                  </ul>
-                </div>
-                <div class="column small-12 medium-6" data-equalizer-watch="foo">
-                  <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
-                    <li class="title">Engage</li>
-                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV17-Engage.jpg" alt="engage">
-                    <li class="description">Interactive photo booths at kineticFIELD, circuitGROUNDS and neonGARDEN</li>
-                    <li class="description" data-equalizer-watch="bar">Complimentary oxygen bar</li>
-                    <li class="description" data-equalizer-watch="bar">EDC Unity Wall: share your message of love with fellow VIP Headliners</li>
-                    <li class="description" data-equalizer-watch>VIP ball pit — a Headliner favorite!</li>
-                  </ul>
-                </div>
-                <div class="column small-12 medium-6" data-equalizer-watch="foo">
-                  <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
-                    <li class="title">Energize</li>
-                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV17-ENERGIZE.jpg" alt="energize">
-                    <li class="description">Water refill station at kineticFIELD</li>
-                    <li class="description" data-equalizer-watch="bar">Coffee bar</li>
-                    <li class="description" data-equalizer-watch="bar">Dedicated gourmet food trucks: offerings will include vegetarian, vegan and gluten-free options</li>
-                    <li class="description" data-equalizer-watch>Beats and Breakfast at kineticFIELD: complimentary, 4–6am, includes fruit salad, orange juice, bagels, bananas, pastries and more (first come, first served while supplies last)</li>
-                  </ul>
-                </div>
-                <div class="column small-12 medium-6">
-                  <ul class="pricing-table no-bullet" data-equalizer-watch="foo" data-equalizer="bar">
-                    <li class="title">Enjoy</li>
-                    <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/11/EDCLV-17-ENJOY.jpg" alt="enjoy">
-                    <li class="description">Dedicated, expedited VIP entrances into the festival</li>
-                    <li class="description" data-equalizer-watch="bar">Air-conditioned bathrooms at kineticFIELD, circuitGROUNDS and neonGARDEN</li>
-                    <li class="description" data-equalizer-watch="bar">Custom commemorative EDC VIP show lanyard</li>
-                    <li class="description" data-equalizer-watch>Full cash bars offering signature EDC cocktails</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-            <!-- /compra de boletos -->
-
-            <!-- partners -->
-            <section id="partners-container">
-              <h3 class="text-center">Partners</h3>
-              <div class="row align-center">
-                <div class="column medium-3 small-8">
-                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/edc_las_vegas_2017_web_sponsorship_tiles_pioneer_dj_r01.png" alt="pionneer">
-                </div>
-                <div class="column medium-3 small-8">
-                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/edc_las_vegas_2017_sponsor_logos_trap_nation_500x500_r013.png" alt="pionneer">
-                </div>
-                <div class="column medium-3 small-8">
-                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/escape_2016_web_sponsorship_smirnoff_footer_logo_r01.png" alt="pionneer">
-                </div>
-                <div class="column medium-3 small-8">
-                  <img src="http://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/escape_2016_web_sponsorship_corona_extra_footer_logo_r01.png" alt="pionneer">
-                </div
-              </div>
-            </section>
-            <!-- /partners -->
-
-            <!-- suscribete -->
-            <section id="suscribete-container" data-magellan-target="suscribete-container">
-              <h3 class="text-center">Suscríbete</h3>
-              <h5 class="text-center"><small>Recibe las ultimas novedades del festival</small></h5>
-              <form class="" action="https://formspree.io/jesussandrea12@gmail.com" method="POST" novalidate data-abide>
-                <div data-abide-error class="row colums small-12 small-12 medium-6 text-center none">
-                  <p><i class="fi-alert"> Ingresó un correo electronico no válido</i></p>
-                </div>
-                <div class="row colums small-12 small-12 medium-6">
-                  <div class="input-group">
-                    <span class="input-group-label"><i class="fi-mail"></i></span>
-                    <input type="mail" name="email" class="input-group-field" required placeholder="tu@correo.com" value="">
-                    <div class="input-group-button">
-                      <input type="submit" class="button" value="Suscribirse!">
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </section>
-            <!-- /suscribete -->
-
-            <!-- info -->
-            <section id="info-container" data-magellan-target="info-container">
-              <h3 class="text-center">Información</h3>
-              <div class="info-map" data-interchange="[assets/small-map.html, small], [assets/map.html, medium]">
-
-              </div>
-            </section>
-            <!-- /info -->
-            <!-- social -->
-
-            <section id="social-container">
-              <p class="text-center">Warning: This is NOT the official web page</p>
-              <div class="row align-center">
-                <div class="small-1 column">
-                  <a href="#" target="_blank">
-                    <i class="fi-social-facebook"></i>
-                  </a>
-                </div>
-                <div class="small-1 column">
-                  <a href="#" target="_blank">
-                    <i class="fi-social-instagram"></i>
-                  </a>
-                </div>
-                <div class="small-1 column">
-                  <a href="#" target="_blank">
-                    <i class="fi-social-twitter"></i>
-                  </a>
-                </div>
-              </div>
-            </section>
-            <!-- /social -->
+        <div class="timeline-item">
+          <div class="timeline-icon text-center"><i class="fa fa-check-square icons" aria-hidden="true"></i></div>
+          <div class="timeline-content">
+            <p class="timeline-content-date">Browse, Read, Dance.</h2>
+          </div>
         </div>
 
       </div>
+    </section>
+    <!-- /story -->
+
+    <!-- world of edc -->
+    <section id="world-of-edc" data-magellan-target="world-of-edc" class="edc-content-wrapper">
+      <div class="edc-content-wrapper-title">
+        <h2 class="text-center">The world of edc</h2>
+      </div>
+      <div class="container">
+        <div class="row edc-content-wrapper-img">
+          <div class="column small-12 medium-6 large-3">
+            <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131550/EDCLV2017_0617_005230-1401_TJH.jpg" alt="img-edc-wrapper-1">
+          </div>
+          <div class="column small-12 medium-6 large-3">
+            <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131606/EDCLV2017_0617_204730-2869_JSL.jpg" alt="img-edc-wrapper-2">
+          </div>
+          <div class="column small-12 medium-6 large-3">
+            <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131559/EDCLV2017_0617_014057-2209_BJC.jpg" alt="img-edc-wrapper-3">
+          </div>
+          <div class="column small-12 medium-6 large-3">
+            <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131539/EDCLV2017_0616_220839-0566_TJH.jpg" alt="img-edc-wrapper-4">
+          </div>
+        </div>
+      </div>
+      <div class="edc-content-wrapper-description">
+        <div class="container">
+          <div class="row">
+            <div class="small-12 medium-12 text-center text-justify">
+              <p>In this place, we affirm that we are kindred spirits bound by deep passion — not only for the music we love, but for the community that surrounds it. We groove to the same universal beat and, together, create beautiful experiences
+                that will never be forgotten. With that spirit in mind, Insomniac has taken EDC to new heights for our next journey together.</p>
+              <p>Coming to Vegas for the first time ever, EDC Camping is a dream come true for many, extending the festivities into the daytime for a complete four-day experience. Our earlier hours will also allow us to create an opening ceremony
+                on the cosmicMEADOW lawn from 4–7pm, featuring extended sets from a different artist each day! Plus, earlier festival dates mean cooler springtime weather for all to enjoy.</p>
+              <p>We can’t wait to share all of these new elements and celebrate with you Under the Electric Sky!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /world of edc -->
+
+    <!-- stages -->
+    <section id="stages" data-magellan-target="Stages" class="edc-stages">
+      <div class="edc-stages-title">
+        <h2 class="text-center">Stages</h2>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-12 edc-stages-card">
+          <h4 class="edc-stages-card-title text-center">kineticFIELD</h4>
+          <p class="edc-stages-card-description">Always in motion, forever evolving, this sacred edc-wrapper has known homes across the globe, continually transforming itself as much as it has those who experience it. What grand new form will it take this year?
+            Search your heart, for in love lies the answer.</p>
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131541/EDCLV2017_0616_221013-3370_MVA.jpg" alt="edc-stages-card-img">
+        </div>
+
+        <div class="small-12 medium-6 edc-stages-card">
+          <h4 class="edc-stages-card-title text-center">cosmicMEADOW</h4>
+          <p class="edc-stages-card-description">Long known for its lush greenery, stellar views, and bold musical experimentation, this majestic meadow will be transformed into a holy site for enchanted ritual, performed each day in the opening ceremonies of EDC.</p>
+          <img class="edc-stages-card-img" src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131544/EDCLV2017_0616_235927-5716_SSH.jpg" alt="edc-stages-card-img">
+        </div>
+
+        <div class="small-12 medium-6 edc-stages-card">
+          <h4 class="edc-stages-card-title text-center">circuitGROUNDS</h4>
+          <p class="edc-stages-card-description">As much as we worship the night sky, we are rooted to the land on which we dance. We are connected, one to another, to the past and to the future, and to the energy all around us. Look to circuitGROUNDS to
+            spark your passion for epic melodies.</p>
+          <img class="edc-stages-card-img" src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131610/EDCLV2017_0618_024105-2118_MVA.jpg" alt="edc-stages-card-img">
+        </div>
+
+        <div class="small-12 medium-6 edc-stages-card">
+          <h4 class="edc-stages-card-title text-center">quantumVALLEY</h4>
+          <p class="edc-stages-card-description">A new world is about to unfurl — one where the sky has no limits. Welcome to our utopia, where ethereal beats and timeless trance melodies transport you to a higher state of consciousness. This is your destination.</p>
+          <img class="edc-stages-card-img" src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131554/EDCLV2017_0617_011640-0825_SHA.jpg" alt="edc-stages-card-img">
+        </div>
+
+        <div class="small-12 medium-6 edc-stages-card">
+          <h4 class="edc-stages-card-title text-center">bassPOD</h4>
+          <p class="edc-stages-card-description">Something massive this way comes. A primal frequency rumbles beneath the foundation of EDC, a harbinger of unforeseen forces that approach. Prepare to be shaken by the purest forms of dubstep, trap, and drum &amp; bass.</p>
+          <img class="edc-stages-card-img" src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/08/26131603/EDCLV2017_0617_202005-4016_SMB.jpg" alt="edc-stages-card-img">
+        </div>
+
+      </div>
+    </section>
+    <!-- stages -->
+
+    <!-- tickets -->
+    <section id="tickets" data-magellan-target="tickets" class="tickets-container">
+      <div class="tickets-container-title">
+        <h2 class="text-center">Tickets</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="column small-12 medium-6 tickets-container-description">
+            <p>Explore, Engage, Energize and Enjoy! A spectacular adventure awaits you with the EDC Las Vegas VIP Experience.</p>
+            <p>To enter all VIP areas at EDC Las Vegas, you must be 21+ and present a valid photo ID — either a US driver’s license/ID or a US/foreign passport. Learn more about Ages &amp; ID. Avoid scalpers and scammers! Purchase passes ONLY from the official
+              Front Gate ticketing page. Layaway plans are available. See our Ticketing FAQ for answers to your questions.</p>
+          </div>
+          <div class="column small-12 medium-6">
+            <div class="tickets-container-box">
+              <div class="tickets-container-box-wrapper">
+                <h3 class="tickets-container-box-title">3-Day Vip</h3>
+              </div>
+              <h4 class="tickets-container-box-price">$699</h4>
+              <p class="tickets-container-box-subtitle">+ fees and taxes</p>
+              <a class="button primary tickets-container-box-button" href="#">Buy tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" data-equalizer data-equalize-on="small">
+        <div class="column small-12 medium-6" data-equalizer-watch="foo">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/09/05195816/03EDCLV2017_0616_201553-8860_KKB.jpg" alt="explore">
+          <p class="tickets-container-type">Explore</p>
+          <ul class="tickets-container-features" data-equalizer-watch="foo" data-equalizer="bar">
+            <li>Raised viewing decks at kineticFIELD, circuitGROUNDS and cosmicMEADOW</li>
+            <li data-equalizer-watch="bar">Dedicated Dance Areas at bassPOD, wasteLAND, and quantumVALLEY</li>
+            <li data-equalizer-watch="bar">Blind Owl Bistro and Burlesque show</li>
+            <li data-equalizer-watch="bar">VIP Ferris wheel</li>
+          </ul>
+        </div>
+        <div class="column small-12 medium-6" data-equalizer-watch="foo">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/09/05195820/EDCLV2017_0616_185418-9835_BJC.jpg" alt="engage">
+          <p class="tickets-container-type">Engage</p>
+          <ul class="tickets-container-features" data-equalizer-watch="foo" data-equalizer="bar">
+            <li>EDC Unity Wall — share your message of love with other VIP Headliners</li>
+            <li data-equalizer-watch="bar">Complimentary body paint and beauty bar</li>
+            <li data-equalizer-watch="bar">Complimentary oxygen bar</li>
+            <li data-equalizer-watch>VIP ball pit — a Headliner favorite!</li>
+          </ul>
+        </div>
+        <div class="column small-12 medium-6" data-equalizer-watch="foo">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/09/05195818/EDCLV2016_0619_220549-7361_JAN.jpg" alt="energize">
+          <p class="tickets-container-type">Energize</p>
+          <ul class="tickets-container-features" data-equalizer-watch="foo" data-equalizer="bar">
+            <li>Water refill station at kineticFIELD</li>
+            <li data-equalizer-watch="bar">Fresh juice and coffee options available</li>
+            <li data-equalizer-watch="bar">Dedicated gourmet food trucks: offerings will include vegetarian, vegan and gluten-free options</li>
+            <li data-equalizer-watch>“Beats &amp; Breakfast” at kineticFIELD: complimentary breakfast, 4–5:30am, includes fruit salad, orange juice, bagels, bananas, pastries and more (first come, first served, while supplies last)</li>
+          </ul>
+        </div>
+        <div class="column small-12 medium-6">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/49/2017/09/05195822/EDCLV2017_0617_003633-1781_BJC.jpg" alt="enjoy">
+          <p class="tickets-container-type">Enjoy</p>
+          <ul class="tickets-container-features" data-equalizer-watch="foo" data-equalizer="bar">
+            <li>Chill zones featuring additional seating and areas to relax, refresh, and rehydrate</li>
+            <li data-equalizer-watch="bar">Air-conditioned bathrooms at kineticFIELD, circuitGROUNDS and neonGARDEN</li>
+            <li data-equalizer-watch="bar">Custom commemorative EDC VIP show lanyard</li>
+            <li data-equalizer-watch>Full cash bars offering signature EDC cocktails</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /tickets -->
+
+    <!-- partners -->
+    <section class="partners-container">
+      <div class="partners-container-title">
+        <h4 class="text-center">Insomniac Partners</h4>
+      </div>
+      <div class="row align-center partners-container-sponsors">
+        <div class="column large-3 medium-3 small-8">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/escape_2016_web_sponsorship_corona_extra_footer_logo_r01.png" alt="corona">
+        </div>
+        <div class="column large-3 medium-3 small-8">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/escape_2016_web_sponsorship_smirnoff_footer_logo_r01.png" alt="smirnoff">
+        </div>
+        <div class="column large-3 medium-3 small-8">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/escape_2016_web_sponsorship_uber_footer_logo_r01.png" alt="uber">
+        </div>
+        <div class="column large-3 medium-3 small-8">
+          <img src="https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/28/2016/09/edc_las_vegas_2017_web_sponsorship_tiles_pioneer_dj_r01.png" alt="pionneer">
+        </div>
+      </div>
+    </section>
+    <!-- /partners -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+       <div class="row text-left">
+         <div class="small-8 medium-6 large-3 columns">
+           <ul class="vertical footer-links">
+             <h5 class="footer-title">INSOMNIAC.COM</h5>
+             <li><a href="#">MEDIA</a></li>
+             <li><a href="#">FESTIVALS</a></li>
+             <li><a href="#">EVENTS</a></li>
+             <li><a href="#">DISCOVERY PROJECT</a></li>
+             <li><a href="#">INSOMNIAC MERCHANDISE</a></li>
+           </ul>
+         </div>
+
+         <div class="small-8 medium-6 large-3 columns">
+           <ul class="vertical footer-links">
+             <h5 class="footer-title">TICKETS</h5>
+             <li><a href="#">GENERAL ADMISSION</a></li>
+             <li><a href="#">VIP</a></li>
+             <li><a href="#">LAYAWAY</a></li>
+             <li><a href="#">MARQUEE SKYDECK</a></li>
+             <li><a href="#">EDC WEDDINGS</a></li>
+             <li><a href="#">LOCKER RENTALS</a></li>
+             <li><a href="#">TICKETING FAQ</a></li>
+             <li><a href="#">CHARITY</a></li>
+           </ul>
+         </div>
+
+         <div class="small-8 medium-6 large-3 columns">
+           <ul class="vertical footer-links">
+             <h5 class="footer-title">EXPERIENCE</h5>
+             <li><a href="#">WORLD OF EDC</a></li>
+             <li><a href="#">STAGES</a></li>
+             <li><a href="#">RIDES</a></li>
+             <li><a href="#">ART</a></li>
+             <li><a href="#">PERFORMERS</a></li>
+             <li><a href="#">CARNIVAL SQUARE</a></li>
+             <li><a href="#">GALLERY</a></li>
+           </ul>
+         </div>
+
+         <div class="small-8 medium-6 large-3 columns">
+           <ul class="vertical footer-links">
+             <h5 class="footer-title">CAMPING</h5>
+             <li><a href="#">CAMPING</a></li>
+           </ul>
+         </div>
+        </div>
+       </div>
+     <div class="footer-bottom-bar row">
+       <div class="small-12 medium-12 columns">
+         <div class="bottom-copyright">
+           <span>ABOUT INSOMNIAC | CONTACT US | PRIVACY POLICY |
+             BY CONTINUING PAST THIS PAGE, YOU AGREE TO OUR TERMS OF USE. |
+             ©2017 INSOMNIAC HOLDINGS, LLC. ALL RIGHTS RESERVED</span>
+         </div>
+       </div>
+     </div>
+
+    </footer>
     </div>
-
-
+    <!-- scripts -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
